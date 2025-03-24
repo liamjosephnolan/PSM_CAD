@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="simple_mtm_v3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="1.88680116792806E-11 -7.89096091530853E-13 0.146649913025819"
+        rpy="0 0 0" />
+      <mass
+        value="1.28910373447466" />
+      <inertia
+        ixx="0.00787183936947509"
+        ixy="-2.38713345596337E-14"
+        ixz="-1.5500890991365E-14"
+        iyy="0.0062829958134847"
+        iyz="-1.08474577856972E-14"
+        izz="0.00295338481354163" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="right_J1_link">
+    <inertial>
+      <origin
+        xyz="-0.0272468641090349 -0.00431239962158214 0.0136177788693076"
+        rpy="0 0 0" />
+      <mass
+        value="0.217265269014196" />
+      <inertia
+        ixx="8.8289658689477E-05"
+        ixy="-5.23747831689525E-06"
+        ixz="4.84618661160435E-07"
+        iyy="9.88337545554211E-05"
+        iyz="3.16056040570285E-07"
+        izz="0.000161817724585355" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_J1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_J1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_J1_joint"
+    type="fixed">
+    <origin
+      xyz="0 0.216999999999988 0.284999999999997"
+      rpy="-1.57079632679489 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_J1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_J2_link">
+    <inertial>
+      <origin
+        xyz="0.123474393867848 0.0151001355687561 0.0089222337385291"
+        rpy="0 0 0" />
+      <mass
+        value="0.028442603557216" />
+      <inertia
+        ixx="2.23413747833825E-06"
+        ixy="-3.63778375380253E-11"
+        ixz="-8.63056316192394E-08"
+        iyy="2.11946804960037E-05"
+        iyz="1.9508735639919E-13"
+        izz="2.18319915210086E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_J2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_J2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_J2_joint"
+    type="fixed">
+    <origin
+      xyz="0.0349999999999925 0.0150999999999992 0.0200000000000018"
+      rpy="3.14159265358979 0 0" />
+    <parent
+      link="right_J1_link" />
+    <child
+      link="right_J2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_J3_link">
+    <inertial>
+      <origin
+        xyz="0.169855168689025 -0.00305883869647997 0.000145482432602373"
+        rpy="0 0 0" />
+      <mass
+        value="0.0380698507696803" />
+      <inertia
+        ixx="3.570151818576E-06"
+        ixy="5.77797289697471E-08"
+        ixz="-8.33816051763606E-09"
+        iyy="2.50590429108496E-05"
+        iyz="-4.10119337186332E-09"
+        izz="2.32459379325905E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_J3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_J3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_J3_joint"
+    type="fixed">
+    <origin
+      xyz="0.227499999999998 0.0150999999999999 0.0195"
+      rpy="1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="right_J2_link" />
+    <child
+      link="right_J3_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_G3_link">
+    <inertial>
+      <origin
+        xyz="-0.000538297476743943 -0.030713766184424 0.0399306243530027"
+        rpy="0 0 0" />
+      <mass
+        value="0.0139115084786958" />
+      <inertia
+        ixx="2.05714094634586E-06"
+        ixy="1.18920754656095E-08"
+        ixz="1.26103144141425E-08"
+        iyy="3.24885510161296E-06"
+        iyz="8.7999754923928E-09"
+        izz="2.08516194030023E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_G3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_G3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_G3_joint"
+    type="fixed">
+    <origin
+      xyz="0.192500000000002 0.00969999999999821 0"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="right_J3_link" />
+    <child
+      link="right_G3_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_G2_link">
+    <inertial>
+      <origin
+        xyz="-0.00019356466808218 -0.0340058831715823 0.0387465222468135"
+        rpy="0 0 0" />
+      <mass
+        value="0.000175394578104925" />
+      <inertia
+        ixx="6.00806245621315E-09"
+        ixy="1.19071568960991E-11"
+        ixz="-1.77273008759156E-09"
+        iyy="7.79464906245331E-09"
+        iyz="3.12378910526827E-11"
+        izz="2.03310817422897E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_G2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_G2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_G2_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0139815439024298 0.00129786118054417 0.0772341692003624"
+      rpy="-3.14159265358979 0.364174851103282 -3.14159265358979" />
+    <parent
+      link="right_G3_link" />
+    <child
+      link="right_G2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_G1_link">
+    <inertial>
+      <origin
+        xyz="0.000186896931372554 -0.119856134439348 0.039744870598827"
+        rpy="0 0 0" />
+      <mass
+        value="0.00625621520567211" />
+      <inertia
+        ixx="1.27666098425883E-05"
+        ixy="-3.81984029962688E-10"
+        ixz="1.82290603449966E-09"
+        iyy="1.14531246370276E-07"
+        iyz="-1.08584454873297E-09"
+        izz="1.27722041084183E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_G1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_G1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_G1_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="right_G2_link" />
+    <child
+      link="right_G1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_lever_1_link">
+    <inertial>
+      <origin
+        xyz="0.00510793204640436 -0.0889448697520049 0.0529085641186344"
+        rpy="0 0 0" />
+      <mass
+        value="0.00204075410055683" />
+      <inertia
+        ixx="7.29183513257811E-07"
+        ixy="-6.03030693249689E-08"
+        ixz="-1.1942010127566E-08"
+        iyy="6.47741906382207E-08"
+        iyz="-1.39761556747307E-07"
+        izz="7.10623137553873E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_lever_1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_lever_1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_lever_1_joint"
+    type="fixed">
+    <origin
+      xyz="-0.000578106027015302 0.00496024892621399 0.0771324048250518"
+      rpy="-3.12182427052133 -7.44784606204923E-05 -3.13405782561958" />
+    <parent
+      link="right_G1_link" />
+    <child
+      link="right_lever_1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_lever_2_link">
+    <inertial>
+      <origin
+        xyz="0.00510793196677847 -0.088944870622309 0.052908563971167"
+        rpy="0 0 0" />
+      <mass
+        value="0.00204075409888524" />
+      <inertia
+        ixx="7.29183560316002E-07"
+        ixy="-6.03030754022077E-08"
+        ixz="-1.19420115548806E-08"
+        iyy="6.47741938415799E-08"
+        iyz="-1.39761574634617E-07"
+        izz="7.10623180129391E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_lever_2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/right_lever_2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_lever_2_joint"
+    type="fixed">
+    <origin
+      xyz="0.00036791989843285 0.00447042270834766 0.000824842222483302"
+      rpy="0.00686960114312612 0 -0.00261851443835586" />
+    <parent
+      link="right_G1_link" />
+    <child
+      link="right_lever_2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_J1_link">
+    <inertial>
+      <origin
+        xyz="-0.0272470463672841 -0.00431247084058722 -0.0136176603624838"
+        rpy="0 0 0" />
+      <mass
+        value="0.217267757216331" />
+      <inertia
+        ixx="8.82896141323449E-05"
+        ixy="-5.23762437385712E-06"
+        ixz="-4.84574615247581E-07"
+        iyy="9.88338956696862E-05"
+        iyz="-3.16059095109483E-07"
+        izz="0.000161817830134084" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_J1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_J1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_J1_joint"
+    type="fixed">
+    <origin
+      xyz="0 -0.216999999999989 0.284999999999993"
+      rpy="-1.57079632679489 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_J1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_J2_link">
+    <inertial>
+      <origin
+        xyz="0.123474376253567 0.0151001317387138 -0.00892223154220478"
+        rpy="0 0 0" />
+      <mass
+        value="0.028442627260003" />
+      <inertia
+        ixx="2.23414031770246E-06"
+        ixy="-3.46546052577261E-11"
+        ixz="8.63065996445561E-08"
+        iyy="2.11946848479022E-05"
+        iyz="2.86654440924258E-13"
+        izz="2.1831996008116E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_J2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_J2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_J2_joint"
+    type="fixed">
+    <origin
+      xyz="0.034999999999992 0.0150999999999917 -0.0200000000000006"
+      rpy="3.14159265358979 0 0" />
+    <parent
+      link="left_J1_link" />
+    <child
+      link="left_J2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_J3_link">
+    <inertial>
+      <origin
+        xyz="0.169856201015062 -0.0030586607501043 -0.000145661945585074"
+        rpy="0 0 0" />
+      <mass
+        value="0.0380704888847409" />
+      <inertia
+        ixx="3.57026925240988E-06"
+        ixy="5.77847391819965E-08"
+        ixz="8.42363592973487E-09"
+        iyy="2.50591350261033E-05"
+        iyz="4.12436620976937E-09"
+        izz="2.32459225235906E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_J3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_J3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_J3_joint"
+    type="fixed">
+    <origin
+      xyz="0.227499999999999 0.0151000000000003 -0.0195000000000037"
+      rpy="-1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="left_J2_link" />
+    <child
+      link="left_J3_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_G3_link">
+    <inertial>
+      <origin
+        xyz="0.000909567432228087 -0.0307137385033584 -0.0399306126980352"
+        rpy="0 0 0" />
+      <mass
+        value="0.0139115581308515" />
+      <inertia
+        ixx="2.0571424836655E-06"
+        ixy="1.18930289816947E-08"
+        ixz="-1.26106426039852E-08"
+        iyy="3.24886466948477E-06"
+        iyz="-8.80030254005792E-09"
+        izz="2.08517245630163E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_G3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_G3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_G3_joint"
+    type="fixed">
+    <origin
+      xyz="0.192500000000002 0.00969999999999449 -0.00144781733221183"
+      rpy="3.14159265358979 -1.5707963267949 0" />
+    <parent
+      link="left_J3_link" />
+    <child
+      link="left_G3_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_G2_link">
+    <inertial>
+      <origin
+        xyz="-0.000193564668083596 -0.0340058831715875 -0.0387465222468096"
+        rpy="0 0 0" />
+      <mass
+        value="0.000175394578104925" />
+      <inertia
+        ixx="6.00806245621315E-09"
+        ixy="1.19071568960995E-11"
+        ixz="1.77273008759155E-09"
+        iyy="7.79464906245331E-09"
+        iyz="-3.12378910526842E-11"
+        izz="2.03310817422896E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_G2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_G2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_G2_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0125337265702119 0.00129786118054964 -0.0772341692003637"
+      rpy="3.14159265358979 -0.364174851103282 -3.14159265358979" />
+    <parent
+      link="left_G3_link" />
+    <child
+      link="left_G2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_G1_link">
+    <inertial>
+      <origin
+        xyz="0.000186811130665682 -0.119857377561459 -0.0397449189324022"
+        rpy="0 0 0" />
+      <mass
+        value="0.00625662154187374" />
+      <inertia
+        ixx="1.27674052324291E-05"
+        ixy="-3.7654953295786E-10"
+        ixz="-1.82353664076048E-09"
+        iyy="1.14536197943222E-07"
+        iyz="1.0920974447754E-09"
+        izz="1.27729976151306E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_G1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_G1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_G1_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_G2_link" />
+    <child
+      link="left_G1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_lever_1_link">
+    <inertial>
+      <origin
+        xyz="0.00510794766504316 -0.0889447403661791 -0.0529085748864607"
+        rpy="0 0 0" />
+      <mass
+        value="0.00204075787543212" />
+      <inertia
+        ixx="7.29170399820856E-07"
+        ixy="-6.03021627649103E-08"
+        ixz="1.19420450260695E-08"
+        iyy="6.47742627313314E-08"
+        iyz="1.397606252607E-07"
+        izz="7.10610279610231E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_lever_1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_lever_1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_lever_1_joint"
+    type="fixed">
+    <origin
+      xyz="-0.000578106027015551 0.0049602489262156 -0.0771324048250512"
+      rpy="3.12182427052133 7.44784606204923E-05 -3.13405782561958" />
+    <parent
+      link="left_G1_link" />
+    <child
+      link="left_lever_1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_lever_2_link">
+    <inertial>
+      <origin
+        xyz="0.00510794761732353 -0.0889447409323631 -0.0529085750175793"
+        rpy="0 0 0" />
+      <mass
+        value="0.00204075785236801" />
+      <inertia
+        ixx="7.29170418880374E-07"
+        ixy="-6.03021660374515E-08"
+        ixz="1.19420451612106E-08"
+        iyy="6.47742592125221E-08"
+        iyz="1.3976062634961E-07"
+        izz="7.10610300175445E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_lever_2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_mtm_v3/meshes/left_lever_2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_lever_2_joint"
+    type="fixed">
+    <origin
+      xyz="0.000367919898432378 0.00447042270834289 -0.000824842222482025"
+      rpy="-0.00686960114312612 0 -0.00261851443835586" />
+    <parent
+      link="left_G1_link" />
+    <child
+      link="left_lever_2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
